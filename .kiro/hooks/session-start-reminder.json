@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Session Start Reminder",
+      "trigger": "SessionStart",
+      "description": "Reminds the agent about project constraints at the start of every session",
+      "action": {
+        "type": "agent",
+        "prompt": "This is a Life Dashboard project built with pure HTML, CSS, and Vanilla JavaScript. Key constraints: only ONE CSS file in css/ and ONE JS file in js/, no frameworks, no backend. All data goes through browser Local Storage. The design follows an Apple-minimal aesthetic using CSS custom properties (design tokens). Always maintain these constraints when making changes."
+      }
+    }
+  ]
+}
